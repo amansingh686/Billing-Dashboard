@@ -1,0 +1,468 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@400..800&family=Vazirmatn:wght@100..900&display=swap");
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------ADMIN CSS ----------------------*/
+
+
+.admin-dashbox {
+  padding: 20px;
+  border: 1px solid #BCBCBC;
+  background-color: #fdfdfd;
+  margin-bottom: 3%;
+  border-radius: 4px;
+  text-align: left;
+  box-shadow: 0px 2px 7px 0px #00000040;
+}
+
+
+.admin-dashbox h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  color: #1d1c1c !important;
+  cursor: pointer;
+}
+.admin-dashbox h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left !important;
+  color: #383737 !important;
+  cursor: pointer;
+ 
+}
+.dash-link{
+  text-decoration: none;
+}
+
+.customer-dashbox {
+  padding: 20px;
+  border: 1px solid #BCBCBC;
+  background-color: #fdfdfd;
+  margin-bottom: 3%;
+  border-radius: 4px;
+  text-align: left;
+  box-shadow: 0px 2px 7px 0px #00000040;
+}
+
+.customer-dashbox h2{
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+}
+.active-box{
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+}
+.active-box h3{
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left !important;
+  background-color: 
+  #C5FBCA;
+  padding: 5px 12px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: end;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: 
+  #00680A;
+}
+
+.inactive-box{
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+
+}
+.inactive-box h3{
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left !important;
+  background-color: 
+  #FFDADA;
+  padding: 5px 12px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: end;
+  font-weight: 600;
+  color: 
+  #B00707;
+  margin-bottom: 0;
+}
+
+
+.add-btn{
+  display: flex;
+  justify-content: end;
+  text-decoration: none;
+  margin: 15px 0;
+}
+.add-btn button{
+  background-color: #F7F7F7;
+  border: none;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  color: #1C274C;
+  font-weight: 600;
+  border-radius: 2px;
+}
+
+.cancel-create-btn{
+  display: flex;
+  gap: 20px;
+}
+.cancel-create-btn .in-btn1{
+  background-color: 
+  #FFF8F8;
+  color: #FF0000;
+  border: 1px solid #FF0000;
+  border-radius: 3px;
+  padding: 7px 20px;
+}
+
+.cancel-create-btn .in-btn2{
+  background-color: 
+  
+#262562;
+  color: #FFf;
+  border: 1px solid 
+  #262562;
+  border-radius: 3px;
+  padding: 7px 20px;
+}
+
+/* =============== Sidebar =============== */
+.sidebar {
+  position: fixed;
+  top: 10;
+  left: 0;
+  height: 100%;
+  width: 250px !important;
+  background-color: #F8FAFF; 
+  color: #000;
+  transition: all .5s ease;
+  z-index: 100;
+}
+
+.sidebar.close {
+  width: 78px !important;
+}
+
+/* --------- Logo ------------ */
+
+.logo-box {
+  /* height: 60px; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: all .5s ease;
+}
+
+
+.logo-box i {
+  font-size: 30px;
+  height: 50px;
+  min-width: 78px;
+  text-decoration: none;
+  color: #a952a3;
+  text-align: center;
+  line-height: 50px;
+  transition: all .5s ease;
+  margin-left: -20px; 
+}
+.sidebar.close .logo-box i {
+  transform: rotate(180deg);
+}
+
+
+/* ---------- Sidebar List ---------- */
+.sidebar-list {
+  height: 100%;
+  padding: 30px 0 150px 0;
+  overflow: auto !important;
+}
+
+.sidebar-list::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar-list li {
+  transition: all .5s ease;
+}
+
+.sidebar-list li .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.sidebar-list li.active .title {
+  background-color: #a952a3;
+  color: white;
+}
+
+.sidebar-list li.active .bi-chevron-down {
+  transition: all .5s ease;
+  transform: rotate(180deg);
+}
+
+.sidebar-list li .title .link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.sidebar-list li .title i {
+  height: 50px;
+  min-width: 78px;
+  text-align: center;
+  line-height: 50px;
+  color: #292D32;
+  font-size: 20px;
+  margin-left: -20px;
+}
+
+.sidebar-list li .title .name {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Poppins';
+  color: #0C0C0D !important;
+}
+
+/* ---------------- Submenu ------------- */
+.sidebar-list li .submenu {
+
+  display: none;
+
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transition: all .5s ease;
+}
+
+.sidebar-list li.active .submenu {
+  width: unset;
+  height: unset;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 6px 6px 14px 80px;
+  background-color: #eeeeee;
+}
+
+.sidebar-list li.dropdown.active .submenu {
+  width: unset;
+  height: unset;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 6px 6px 14px 80px;
+  background-color: #eeeeee;
+}
+
+.submenu .link {
+  color: #000;
+  font-size: 15px;
+  padding: 5px 0;
+  transition: all .5s ease;
+  text-decoration: none;
+}
+
+.submenu-title {
+  display: none;
+}
+
+/* ---------------- Submenu Close ------------- */
+.sidebar.close .logo-name,
+.sidebar.close .title .name,
+.sidebar.close .title .bi-chevron-down {
+  display: none;
+}
+
+.sidebar.close .sidebar-list {
+  overflow: visible;
+}
+
+.sidebar.close .sidebar-list li {
+  position: relative;
+}
+
+.sidebar.close .sidebar-list li .submenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 100%;
+  top: -10px;
+  margin-top: 0;
+  padding: 10px 20px;
+  border-radius: 0 6px 6px 0;
+  height: max-content;
+  width: max-content;
+  opacity: 0;
+  transition: all .5s ease;
+  pointer-events: none;
+  color: #000;
+}
+
+.sidebar.close .sidebar-list li:hover .submenu {
+  opacity: 1;
+  top: 0;
+  pointer-events: initial;
+  background-color: #a952a3;
+}
+
+.sidebar.close .submenu-title {
+  display: block;
+  font-style: 18px;
+}
+
+
+.home {
+  position: relative;
+  padding-left: 3%;
+  padding-top: 2%;
+  left: 230px;
+  width: calc(100% - 260px);
+  height: 100vh;
+  transition: all .5s ease;
+}
+
+.sidebar.close~.home {
+  left: 78px;
+  width: calc(100% - 78px);
+}
+
+.home .toggle-sidebar {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.home .toggle-sidebar i {
+  font-size: 25px;
+  margin-left: 15px;
+}
+
+.home .toggle-sidebar .text {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+/* LOGO */
+
+.logo-columnimg {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 5px;
+  margin-left: 40px;
+}
+.logo-insidebox{
+  padding: 30px;
+}
+.logo-columnimg button{
+  margin: 20px 0;
+}
+
+/* NAVBAR */
+
+.btn-success {
+  background-color: #a952a3 !important;
+  color: white !important;
+  border: 1px solid #a952a3 !important;
+}
+
+.btn-success:hover {
+  background-color: white !important;
+  color: #a952a3 !important;
+}
+
+.nav-column button{
+
+}
+.nav-column label{
+  font-weight: 600;
+  color: #545454;
+}
+.nav-column{
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 5px;
+  margin: 20px 40px;
+}
+.nav-column form{
+  padding: 10px 20px;
+}
+.p-block {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.p-field label {
+  font-family: "Euclid Circular A", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 2%;
+}
+
+.p-group,
+.p-field select {
+  border-radius: 2px;
+  border: 1px solid #ababab;
+  width: 100%;
+}
+.p-field select {
+  border-radius: 2px;
+  border: 1px solid #ababab;
+  width: 100%;
+  padding: 3%;
+}
+
+.p-control {
+  border: 0 !important;
+  background: white;
+  box-shadow: none !important;
+}
+
+.p-field .p-prepend span {
+  border: 0;
+  background: white;
+  color: #656565;
+  border-radius: 2px;
+}
+
+.p-group input::placeholder,
+.p-field option,
+.p-field select {
+  font-family: "Euclid Circular A", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #656565;
+}
+
+
+
+
+
+
+
+/* -------------------ADMIN CSS END--------------------- */
+
